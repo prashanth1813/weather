@@ -3,6 +3,7 @@ var btn=document.querySelector('.submit');
 var cityname=document.querySelector('.cityname');
 var temp=document.querySelector('.temp');
 var desc=document.querySelector('.desc');
+//var charttype=document.querySelector('#charttype');
 //var charttype1=document.querySelector('#charttype').selectedOption[0].text;
 
 
