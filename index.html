@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Weather</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-image:url('img1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .container{
+            margin-left: 30%;
+            margin-top:150px;
+            background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+            padding:2em;
+            width: 30%;
+            border:none;
+            border-radius: 10px;
+            backdrop-filter: blur(1ss0px);
+            box-shadow: 5px 5px 5px grey;
+        }
+        .display{
+            color: white;
+        }
+        .submit{
+            background-color:red;
+            border: none;
+            color:greenyellow;
+            border-radius: 4px;
+            width:100px;
+            padding:4px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1 style="text-align:center;background:orange;color:white">Weather Forecast</h1>
+    </div>
+    <div class="container">
+        <input type="text" class="city" placeholder="Enter city name">
+        <button class="submit"onclick="weatherchart()">search</button>
+        <div class="display">
+        <h2 class="cityname"></h2>
+        <h1 class="temp"></h1>
+        <div class="desc"></div>
+        </div>
+        <select id="charttype">
+            <option value="pie">pie</option>
+            <option value="line">line</option>
+            <option value="bar">bar</option>
+            <option value="doughnut">doughnut</option>
+          </select>
+
+    </div>
+    <canvas id="myChart" width="400" height="400"></canvas>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+</body>
+</html>
+
+
